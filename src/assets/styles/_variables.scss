@@ -1,0 +1,29 @@
+@mixin flex($just, $align, $direction : row) {
+    display: flex;
+    justify-content: $just;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@mixin head(){
+    background-color: white;
+}
+
+@mixin sectionTitle(){
+    color: #26c17e;
+    margin-bottom: 40px;
+    font: 700 25px/30px "Open Sans", sans-serif
+}
+
+@mixin inputStyles {
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 15px;
+    font-weight: 500;
+}
+
+$main-green :  #26C17E;
+$main-blue: #222935;
+$gray1: #667081;
+$gray3: #ddd;
+$gray5: #eee;
