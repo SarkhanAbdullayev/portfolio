@@ -10,7 +10,7 @@ import Panel from '../components/Panel'
 import { Element } from 'react-scroll'
 import Skills from '../components/Skills'
 import { motion } from 'framer-motion'
-import {Button} from '../components/Button'
+import { Button } from '../components/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
 
@@ -28,39 +28,27 @@ const Inner = () => {
                 <Element name='About me'>
                     <Box
                         title='About me'
-                        content='Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque'
+                        content="Hello there! I'm dedicated Front-End Developer with a genuine passion for creating exceptional digital experiences. I believe that the web is a canvas waiting to be painted, and I'm the artist with a toolkit of HTML, CSS, and JavaScript. With a keen eye for design, I pay meticulous attention to detail, ensuring that every pixel and line of code serves a purpose. I take pride in transforming concepts into user-friendly, aesthetically pleasing websites that not only look great but also function seamlessly. My commitment to staying up-to-date with the latest web technologies and design trends allows me to deliver modern, responsive, and accessible websites. I'm constantly seeking new challenges and opportunities to grow as a developer and as a creator. Thank you for visiting my portfolio, and I hope you enjoy exploring my work. If you have a project in mind or just want to chat about the web, feel free to reach out. Let's bring your digital dreams to life!"
                     />
                 </Element>
                 <Element name='Education'>
-                    <TimeLine data={[
-                        { "date": 2001, "title": "Title 0", "text": "Elit voluptate ad nostrud laboris. Elit incididunt mollit enim enim id id laboris dolore et et mollit. Mollit adipisicing ullamco exercitation ullamco proident aute enim nisi. Dolore eu fugiat consectetur nulla sunt Lorem ex ad. Anim eiusmod do tempor fugiat minim do aliqua amet ex dolore velit.\r\n" }, { "date": 2000, "title": "Title 1", "text": "Et irure culpa ad proident labore excepteur elit dolore. Quis commodo elit culpa eiusmod dolor proident non commodo excepteur aute duis duis eu fugiat. Eu duis occaecat nulla eiusmod non esse cillum est aute elit amet cillum commodo.\r\n" }, { "date": 2012, "title": "Title 2", "text": "Labore esse tempor nisi non mollit enim elit ullamco veniam elit duis nostrud. Enim pariatur ullamco dolor eu sunt ad velit aute eiusmod aliquip voluptate. Velit magna labore eiusmod eiusmod labore amet eiusmod. In duis eiusmod commodo duis. Exercitation Lorem sint do aliquip veniam duis elit quis culpa irure quis nulla. Reprehenderit fugiat amet sint commodo ex.\r\n" }, { "date": 2015, "title": "Title 2", "text": "Labore esse tempor nisi non mollit enim elit ullamco veniam elit duis nostrud. Enim pariatur ullamco dolor eu sunt ad velit aute eiusmod aliquip voluptate. Velit magna labore eiusmod eiusmod labore amet eiusmod. In duis eiusmod commodo duis. Exercitation Lorem sint do aliquip veniam duis elit quis culpa irure quis nulla. Reprehenderit fugiat amet sint commodo ex.\r\n" }, { "date": 2023, "title": "Title 2", "text": "Labore esse tempor nisi non mollit enim elit ullamco veniam elit duis nostrud. Enim pariatur ullamco dolor eu sunt ad velit aute eiusmod aliquip voluptate. Velit magna labore eiusmod eiusmod labore amet eiusmod. In duis eiusmod commodo duis. Exercitation Lorem sint do aliquip veniam duis elit quis culpa irure quis nulla. Reprehenderit fugiat amet sint commodo ex.\r\n" }
-                    ]} />
+                    <TimeLine />
                 </Element>
-                <Element name='Experience'><Expertise data={[
-                    {
-                        date: '2013-2014',
-                        info: {
-                            company: 'Google',
-                            job: 'Front-end developer / php programmer',
-                            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringil'
+                {/* <Element name='Experience'>
+                    <Expertise data={[
+                        {
+                            date: '2014-2014',
+                            info: {
+                                company: 'Servix service',
+                                job: 'Programmer',
+                                description: 'Troubleshooting laptops and tablets. Software installation .'
+                            }
                         }
-                    },
-                    {
-                        date: '2012',
-                        info: {
-                            company: 'Twitter',
-                            job: 'Web developer',
-                            description: 'Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim'
-                        }
-                    }
-                ]} /></Element>
+                    ]} />
+                </Element> */}
                 <Element name='Skills'><Skills /></Element>
                 <Element name='Portfolio'><Portfolio /></Element>
-                <Element name='Contacts'><Address /></Element>
-                <Element name='Feedbacks'><Feedback data={[
-                    { feedback: ' Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. ', reporter: { photoUrl: 'https://www.vhv.rs/dpng/d/551-5511364_circle-profile-man-hd-png-download.png', name: 'John Doe', citeUrl: 'https://www.citeexample.com' } }, { feedback: ' Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. ', reporter: { photoUrl: 'https://www.pngfind.com/pngs/m/624-6248129_jennifer-lawrence-png-jennifer-lawrence-4-k-transparent.png', name: 'Jennifer Lawrence', citeUrl: 'https://www.citeexample.com' } }
-                ]} /></Element>
-                <Link
+                <Element name='Contacts'><Address /></Element><Link
                     className='upToBottom'
                     to='About me'
                     spy={true} smooth={true} offset={-40} duration={800}

@@ -9,8 +9,9 @@ import { faSuitcase } from '@fortawesome/free-solid-svg-icons'
 import { faLocationArrow } from '@fortawesome/free-solid-svg-icons'
 import { faComment } from '@fortawesome/free-solid-svg-icons'
 
-const tabs = ['About me', 'Education', 'Experience', 'Skills', 'Portfolio', 'Contacts', 'Feedbacks'];
-const icons = [faUser, faGraduationCap, faPen, faGem, faSuitcase, faLocationArrow, faComment];
+const tabs = ['About me', 'Education', 'Skills', 'Portfolio', 'Contacts'];
+/* 'Experience',faPen, */
+const icons = [faUser, faGraduationCap,  faGem, faSuitcase, faLocationArrow];
 
 const Navigation = () => {
     return (

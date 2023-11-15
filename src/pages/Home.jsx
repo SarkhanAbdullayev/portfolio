@@ -16,7 +16,7 @@ const Home = () => {
             animate={{ width: '100%' }}
             exit={{ x: window.innerWidth, transition: { duration : 0.1} }}
                 >
-            <PhotoBox name='Sarkhan Abdullayev' title='Programmer. Creative. Innovator' description='Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque' avatar={logo} />
+            <PhotoBox name='Sarkhan Abdullayev' title='Front End Developer' description="Welcome to my portfolio! I'm Sarkhan Abdullayev, a passionate Front-End Developer dedicated to crafting stunning, user-friendly websites. With a keen eye for design and a knack for coding, I transform ideas into digital experiences. Explore my work and discover how I turn concepts into captivating online realities. Let's create the future, one pixel at a time" avatar={logo} />
             <Link to='inner'>{<Button text='Know more' />}</Link>
         </motion.section >
     )
