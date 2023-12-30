@@ -9,6 +9,7 @@ import Portfolio from '../components/Portfolio'
 import Panel from '../components/Panel'
 import { Element } from 'react-scroll'
 import Skills from '../components/Skills'
+import Certificates from '../components/Certificates'
 import { motion } from 'framer-motion'
 import { Button } from '../components/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -47,6 +48,7 @@ const Inner = () => {
                     ]} />
                 </Element> */}
                 <Element name='Skills'><Skills /></Element>
+                <Element name='Certificates'><Certificates /></Element>
                 <Element name='Portfolio'><Portfolio /></Element>
                 <Element name='Contacts'><Address /></Element><Link
                     className='upToBottom'

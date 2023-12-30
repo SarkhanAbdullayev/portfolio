@@ -14,7 +14,8 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */
     -webkit-appearance: none;
-    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 
@@ -161,7 +162,7 @@ input::-webkit-inner-spin-button {
     .upToBottom {
         display: block;
         width: 100%;
-        position: relative;
+        position: fixed;
         right: 0;
         bottom: 0;
 
@@ -191,6 +192,7 @@ input::-webkit-inner-spin-button {
     margin: 40px 0;
     padding: 0 40px;
     margin-bottom: 100px;
+
     h2 {
         @include sectionTitle();
     }
@@ -222,18 +224,19 @@ input::-webkit-inner-spin-button {
     padding: 0 40px;
 
     .loadingAnimate-box {
-        @include flex(center,center);
+        @include flex(center, center);
         height: 250px;
     }
-    
+
     .loadingAnimate {
         animation: rotate 2s linear infinite;
     }
-    
+
     .error {
-        @include flex(center,center);
+        @include flex(center, center);
         height: 250px;
-        & > p {
+
+        &>p {
             color: red;
             margin: auto
         }
@@ -376,6 +379,12 @@ input::-webkit-inner-spin-button {
                 font-style: normal;
             }
 
+            h3 {
+                font-weight: 700;
+                margin-bottom: 3px;
+                font-style: normal;
+            }
+
             a {
                 color: $main-blue;
                 line-height: 120%;
@@ -383,10 +392,8 @@ input::-webkit-inner-spin-button {
                 font-style: normal;
             }
 
-            h3 {
-                font-weight: 700;
-                margin-bottom: 3px;
-                font-style: normal;
+            .downloadcv {
+                font-weight: bold;
             }
         }
 
@@ -604,6 +611,80 @@ input::-webkit-inner-spin-button {
     }
 }
 
+/* ==Certificates== */
+
+.certificates-section {
+    margin-bottom: 100px;
+    padding: 0 40px;
+
+    h2 {
+        @include sectionTitle();
+    }
+
+    .certificates-container {
+
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            width: 308px;
+            margin: 0 20px 20px 0;
+            position: relative;
+            height: 194px;
+            overflow: hidden;
+            transition: 400ms;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .portfolio-info {
+                width: 100%;
+                height: 194px;
+                overflow: auto;
+                position: absolute;
+                left: 0;
+                padding: 20px 15px;
+                background: hsla(0, 0%, 100%, .95);
+                border: 1px solid $gray3;
+                box-sizing: border-box;
+                top: 100%;
+                transition: all .5s ease 0s;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h2 {
+                    font: 700 16px/19px "Open Sans", sans-serif;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    margin-bottom: 10px
+                }
+
+                a {
+                    text-decoration: underline;
+                    color: $main-green;
+                }
+
+
+            }
+        }
+    }
+
+    .certificates-container li:hover .portfolio-info {
+        top: 0
+    }
+
+    .certificates-container span {
+        display: block
+    }
+
+
+}
 
 
 /* ==portfolio== */
@@ -616,22 +697,22 @@ input::-webkit-inner-spin-button {
         @include sectionTitle();
     }
 
-    .tabs {
-        font-size: 16px;
-        margin-bottom: 20px;
+    // .tabs {
+    //     font-size: 16px;
+    //     margin-bottom: 20px;
 
-        li {
-            display: inline-block;
-            padding: 0 0 0 10px;
-            margin: 0 5px 0 0;
-            position: relative;
-            text-transform: capitalize;
+    //     li {
+    //         display: inline-block;
+    //         padding: 0 0 0 10px;
+    //         margin: 0 5px 0 0;
+    //         position: relative;
+    //         text-transform: capitalize;
 
-            span {
-                cursor: pointer
-            }
-        }
-    }
+    //         span {
+    //             cursor: pointer
+    //         }
+    //     }
+    // }
 
     .filter-container {
         position: relative;
@@ -662,6 +743,9 @@ input::-webkit-inner-spin-button {
                 box-sizing: border-box;
                 top: 100%;
                 transition: all .5s ease 0s;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
 
                 h2 {
                     font: 700 16px/19px "Open Sans", sans-serif;
@@ -676,6 +760,8 @@ input::-webkit-inner-spin-button {
                     text-decoration: underline;
                     color: $main-green;
                 }
+
+
             }
         }
     }

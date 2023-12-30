@@ -6,11 +6,14 @@ const skills = [
     { name: "Javascript", range: 85 },
     { name: "React", range: 80 },
     { name: "Html", range: 95 },
-    { name: "CSS", range: 90 },
+    { name: "CSS", range: 86 },
+    { name: "SCSS", range: 95 },
     { name: "Tailwind", range: 70 },
     { name: "Bootstrap", range: 75 },
     { name: "Git", range: 70 },
     { name: "Redux Toolkit", range: 80 },
+    { name: "Jest", range: 50 },
+    { name: "Webpack", range: 50 },
 ]
 
 const textAnimation = {

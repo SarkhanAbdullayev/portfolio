@@ -1,11 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
-import { faSkype } from '@fortawesome/free-brands-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope, faFile } from '@fortawesome/free-regular-svg-icons'
+import { faSkype, faGithub, faFacebookF } from '@fortawesome/free-brands-svg-icons'
 
 const Address = () => {
     return (
@@ -38,6 +35,12 @@ const Address = () => {
                     <dd>
                         <h3>Skype</h3>
                         <a href="skype:syako44@gmail.com?chat">syako44@gmail.com</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><FontAwesomeIcon icon={faFile} className='contact-icon'/></dt>
+                    <dd>
+                        <a className='downloadcv' target="_blank" href='https://drive.google.com/file/d/13dXKzL77_OCGlmgJfZda055GhpvGRcFa/view?usp=sharing'>Download resume</a>
                     </dd>
                 </dl>
             </address>

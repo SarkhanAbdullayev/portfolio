@@ -1,17 +1,13 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser } from '@fortawesome/free-solid-svg-icons'
-import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 import { faPen } from '@fortawesome/free-solid-svg-icons'
-import { faGem } from '@fortawesome/free-solid-svg-icons'
-import { faSuitcase } from '@fortawesome/free-solid-svg-icons'
-import { faLocationArrow } from '@fortawesome/free-solid-svg-icons'
-import { faComment } from '@fortawesome/free-solid-svg-icons'
+import { faUser,faSuitcase, faLocationArrow , faCertificate, faGem, faGraduationCap} from '@fortawesome/free-solid-svg-icons'
 
-const tabs = ['About me', 'Education', 'Skills', 'Portfolio', 'Contacts'];
+
+const tabs = ['About me', 'Education', 'Skills', 'Certificates', 'Portfolio', 'Contacts'];
 /* 'Experience',faPen, */
-const icons = [faUser, faGraduationCap,  faGem, faSuitcase, faLocationArrow];
+const icons = [faUser, faGraduationCap,  faGem, faCertificate, faSuitcase, faLocationArrow];
 
 const Navigation = () => {
     return (
